@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 ## ZYDRICK CENIZA BSIT-2B CS101
 
 ## 1.Set up a vector named age, consisting of 34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 42, 53, 41,51, 35, 24, 33, 41.
@@ -278,7 +284,9 @@ num10
   multiple
   # [1]  3  5  6  9 10 12 15 18 20 21 24 25
 ```
- a. How many data points from 10 to 11?
+
+a.  How many data points from 10 to 11?
+
 ```{r}
 length(num10)+length(multiple)
 # [1] 112
@@ -286,18 +294,24 @@ length(num10)+length(multiple)
 
 ------------------------------------------------------------------------
 
-## 12. Statements can be grouped together using braces ‘{’ and ‘}’. A group of statements is sometimes called a block. Single statements are evaluated when a new line is typed at the end of the syntactically complete statement. Blocks are not evaluated until a new line is entered after the closing brace.
+## 12. Statements can be grouped together using braces '{' and '}'. A group of statements is sometimes called a block. Single statements are evaluated when a new line is typed at the end of the syntactically complete statement. Blocks are not evaluated until a new line is entered after the closing brace.
 
+Enter thiis statement: { x\<-0+ x + 5 + }
 
-``` {}
-
+```{r}
+{ x<-0+ x + 5 +}
 ```
+
+Describe the Output: the output is error unless you put the value of x
+in it and also remove the + sign after the number 5 because it will
+become an error due to no value to be added next to it
 
 ------------------------------------------------------------------------
 
-## 13. *Set up a vector named score, consisting of 72, 86, 92, 63, 88, 89, 91, 92, 75, 75 and 77. To access individual elements of an atomic vector, one generally uses the x[i] construction.
+## 13. \*Set up a vector named score, consisting of 72, 86, 92, 63, 88, 89, 91, 92, 75, 75 and 77. To access individual elements of an atomic vector, one generally uses the x[i] construction.
 
 Find x[2] and x[3]. Write the R code and its output.
+
 ```{r}
   score<-c(72, 86, 92, 63, 88, 89, 91, 92, 75, 75, 77)
   score[2]
@@ -310,23 +324,29 @@ Find x[2] and x[3]. Write the R code and its output.
 
 ------------------------------------------------------------------------
 
-## 14. *Create a vector a = c(1,2,NA,4,NA,6,7).
+## 14. \*Create a vector a = c(1,2,NA,4,NA,6,7).
 
-a. Change the NA to 999 using the codes print(a,na.print="-999").
+a.  Change the NA to 999 using the codes print(a,na.print="-999").
+
 ```{r}
 a<-c(1,2,NA,4,NA,6,7)
   a[is.na(a)] <- 999
   print(a, na.print = "-999")
   # [1]   1   2 999   4 999   6   7
 ```
+
 ------------------------------------------------------------------------
+
 ## 15. A special type of function calls can appear on the left hand side of the assignment
-    operator as in > class(x) <- "foo".
-  Follow the codes below:
-  name = readline(prompt="Input your name: ")
-  age = readline(prompt="Input your age: ")
-  print(paste("My name is",name, "and I am",age ,"years old."))
-  print(R.version.string)
+
+```         
+operator as in > class(x) <- "foo".
+```
+
+Follow the codes below: name = readline(prompt="Input your name:") age =
+readline(prompt="Input your age:") print(paste("My name is",name, "and I
+am",age ,"years old.")) print(R.version.string)
+
 ```{r}
 foo<-{name=readline(prompt = "Input your name: ")
 age=readline(prompt = "Input your age: ")
