@@ -288,11 +288,14 @@ length(num10)+length(multiple)
 
 ## 12. Statements can be grouped together using braces ‘{’ and ‘}’. A group of statements is sometimes called a block. Single statements are evaluated when a new line is typed at the end of the syntactically complete statement. Blocks are not evaluated until a new line is entered after the closing brace.
 
-
-``` {}
-
+Enter thiis statement:
+{ x<-0+ x + 5 + }
+``` {r}
+{ x<-0+ x + 5 + }
 ```
-
+ Describe the Output:
+the output is error unless you make it an object, put the value of x in it in order to be recognized and remove the + sign after the number 5 because it will become an error due to no value to be added next to it
+  
 ------------------------------------------------------------------------
 
 ## 13. *Set up a vector named score, consisting of 72, 86, 92, 63, 88, 89, 91, 92, 75, 75 and 77. To access individual elements of an atomic vector, one generally uses the x[i] construction.
