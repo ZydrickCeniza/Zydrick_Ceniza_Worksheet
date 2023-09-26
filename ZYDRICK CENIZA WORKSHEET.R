@@ -199,7 +199,7 @@ doubledata
   # entered after the closing brace.
   # Enter thiis statement:
   #  { x<-0+ x + 5 + }
-  num9<-{ x<-0+ x + 5 +}
+  { x<-0+ x + 5 +}
  # Describe the Output:
    # the output is error unless you put the value of x in it and also remove the + sign after the number 5 because it will become an error due to no value to be added next to it
   
