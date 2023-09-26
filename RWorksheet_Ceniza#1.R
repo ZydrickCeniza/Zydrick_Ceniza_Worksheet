@@ -183,10 +183,11 @@ doubledata
   # [79]  22  21  20  19  18  17  16  15  14  13  12  11  10   9   8   7   6   5   4   3   2   1
   
   #11. List all the natural numbers below 25 that are multiples of 3 or 5.
-  num11<-seq(1,25,by=1)
+  num11<-seq(1,24,by=1)
   multiple<-subset(num11, num11%%3==0|num11%%5==0)
   multiple
-  # [1]  3  5  6  9 10 12 15 18 20 21 24 25
+  sum(multiple)
+  # [1]  3  5  6  9 10 12 15 18 20 21 24
   
   # a. How many data points from 10 to 11?
   length(num10)+length(multiple)
